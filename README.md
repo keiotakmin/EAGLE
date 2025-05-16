@@ -26,27 +26,7 @@ pip install -(as needed) .
 ---
 
 ## Quick Start
-
-```python
-import torch
-from torch import nn, optim
-from eagle import EAGLE
-
-# Define model, loss, and data loader
-model = nn.Linear(768, 2)
-criterion = nn.CrossEntropyLoss()
-optimizer = EAGLE(model.parameters(), lr=5e-5)
-
-data_loader = ...  # e.g., SST-2 or CIFAR-10
-
-# Training loop
-for epoch in range(num_epochs):
-    for x, y in data_loader:
-        optimizer.zero_grad()
-        logits = model(x)
-        loss = criterion(logits, y)
-        loss.backward()
-        optimizer.step()
+refer ↑
 ```
 
 ---
@@ -82,30 +62,3 @@ for epoch in range(num_epochs):
 |                          | Adam       | 829 / 5,473         | 6.60×     |
 
 For full details, refer to the NeurIPS 2025 paper and `appendix/`.
-
----
-
-## Citation
-
-If you find EAGLE useful, please cite our work:
-
-```bibtex
-@inproceedings{fujimoto2025eagle,
-  title={EAGLE: Early Approximated Gradient-based Learning-rate Estimator},
-  author={Fujimoto, Takumi and ...},
-  booktitle={NeurIPS},
-  year={2025}
-}
-```
-
----
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
----
-
-## Contact
-
-For questions or contributions, please open an issue or email `takumi.fujimoto@keio.ac.jp`.
