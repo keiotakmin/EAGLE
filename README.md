@@ -1,8 +1,5 @@
 # EAGLE Optimizer
 
-[![PyPI version](https://img.shields.io/pypi/v/eagle-optimizer)](https://pypi.org/project/eagle-optimizer)  
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-
 EAGLE (Early Approximated Gradient-based Learning-rate Estimator) is a novel optimizer designed to accelerate deep learning convergence by estimating local curvature from gradient differences. It adaptively switches between the EAGLE update rule and Adam for stable and efficient training.
 
 ---
@@ -18,18 +15,12 @@ EAGLE (Early Approximated Gradient-based Learning-rate Estimator) is a novel opt
 
 ## Installation
 
-Install via pip:
-
-```bash
-pip install eagle-optimizer
-```
-
-Or install from source:
+Install from source:
 
 ```bash
 git clone https://github.com/keiotakmin/EAGLE.git
 cd EAGLE
-pip install -e .
+pip install -(as needed) .
 ```
 
 ---
