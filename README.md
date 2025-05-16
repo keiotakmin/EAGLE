@@ -44,13 +44,6 @@ refer ↑
 
 ---
 
-## Examples
-
-- **Text Classification (SST-2)**: Fine-tune GPT-2 Small and observe ~6.8× faster convergence versus SGD/Adam. See `examples/sst2_finetune.py`.
-- **Image Classification (CIFAR-10)**: Fine-tune ViT-B/16 and observe ~3.4× step-speedup over SGD. See `examples/cifar10_finetune.py`.
-
----
-
 ## Experimental Results
 
 | Task                     | Baseline   | Steps to Final Loss | Speedup   |
